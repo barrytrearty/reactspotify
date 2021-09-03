@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
+import Home from "./components/Home";
+import Artist from "./components/Artist";
+import Album from "./components/Album";
+// import FormLogin from "./components/FormLogin";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+
+        <Route path="/Home" exact component={Home} />
+
+        <Route path="/Artist:/:id" exact component={Artist} />
+        <Route path="/Album/:id" component={Album} />
+        {/* <FormLogin /> */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
