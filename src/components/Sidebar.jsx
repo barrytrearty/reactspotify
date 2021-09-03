@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <div className="d-none d-sm-flex sidebar-container" id="main-content">
+    <div className="d-none d-lg-flex sidebar-container" id="main-content">
       <div className="sidebar">
         <ul className="nav flex-column navbar-dark d-flex h-60">
           <li className="nav-item mb-2 text-white">

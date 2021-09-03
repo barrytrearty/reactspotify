@@ -17,7 +17,7 @@ function App() {
 
         <Route path="/Home" exact component={Home} />
 
-        <Route path="/Artist:/:id" exact component={Artist} />
+        <Route path="/Artist/:id" component={Artist} />
         <Route path="/Album/:id" component={Album} />
         {/* <FormLogin /> */}
         <Footer />
