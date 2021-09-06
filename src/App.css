@@ -200,6 +200,9 @@ button.see-all-button {
   background-color: black;
   position: fixed;
   z-index: 2;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .sidebar {
   padding: 10px;
@@ -574,9 +577,10 @@ td img {
 }
 
 .scrollbar-list {
-  /* overflow: scroll; */
+  overflow: scroll;
   height: 300px;
   scrollbar-color: black;
+  scrollbar-width: thin;
 }
 
 .table-borderless tr:hover {
@@ -676,40 +680,38 @@ tr.border_bottom td {
   margin-bottom: 20px;
 }
 
-input[type="search"], textarea {
-
-  background-color : black;
+input[type="search"],
+textarea {
+  background-color: black;
   color: rgb(165, 165, 165) !important;
   border: black;
   padding-left: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   width: 100%;
-
 }
 
-input[type="search"]:focus, textarea :focus {
-
-  background-color : rgba(46, 41, 41, 0.945);
+input[type="search"]:focus,
+textarea :focus {
+  background-color: rgba(46, 41, 41, 0.945);
   color: white;
   border: rgba(46, 41, 41, 0.945);
   padding-left: 25px;
   font-size: 0.7rem;
   font-weight: 600;
   width: 100%;
-  
 }
 
 #search-icon {
   position: relative;
   left: 5%;
   bottom: 20px;
-  fill: white; width: 12px; height: 12px;
-  vertical-align: middle; cursor: pointer;
+  fill: white;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  cursor: pointer;
 }
-
-
-
 
 /* ////////////////////// 
 
@@ -1050,4 +1052,3 @@ progress {
   margin-left: 1px;
   margin-top: 20px;
 }
-
